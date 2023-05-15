@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100vh;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display{
+  height: 5rem;
+  margin-bottom: 20px;
+  justify-content: center;
+  background: #ADD8E6;
+  border-radius: 10px;
+  font-family: Arial;
+  font-size: large;
+}
+
+.wrapper{
+  background: #89CFF0;
+  width: 20rem;
+  padding: 2rem;
+  margin-top: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0px 9px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.buttonBox{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+}
