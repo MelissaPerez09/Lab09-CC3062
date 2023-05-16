@@ -16,12 +16,13 @@ function App() {
     return (
         <div className="wrapper">
             <div className="display">
-                <div className="buttonBox">
-                    {buttons.flat().map((bt) => (
-                        <Button value={bt} key={uuidv4()} />
-                    ))}
-                </div>
             </div>
+            <div className="buttonBox">
+                {buttons.flat().map((bt) => (
+                    <Button value={bt} key={uuidv4()} />
+                ))}
+            </div>
+            
         </div>
     )
 }
