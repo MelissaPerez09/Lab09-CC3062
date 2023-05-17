@@ -12,14 +12,17 @@ body{
   justify-content: center;
 }
 
-.display{
+.display {
   height: 5rem;
+  width: 15rem;
   margin-bottom: 20px;
-  justify-content: center;
+  text-align: right;
   background: #ADD8E6;
   border-radius: 10px;
   font-family: Arial;
   font-size: large;
+  border: none;
+  padding: 5px;
 }
 
 .wrapper{
