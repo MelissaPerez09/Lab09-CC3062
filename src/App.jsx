@@ -127,11 +127,7 @@ function App() {
                 <button type="button" className="button" onClick={input}>
                     .
                 </button>
-                <button
-                    type="button"
-                    className="equal"
-                    onClick={calculate}
-                >
+                <button type="button" className="equal" onClick={calculate}>
                     =
                 </button>
             </div>
