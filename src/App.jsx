@@ -34,12 +34,16 @@ function App() {
 
     const calculate = () => {
         try {
-            const calculatedResult = evaluate(result).toString()
+            const finalResult = evaluate(result).toString()
 
-            if (calculatedResult.length > 9) {
-                setResult(calculatedResult.slice(0, 9))
+            if (finalResult.length > 9) {
+                setResult(finalResult.slice(0, 9))
             } else {
-                setResult(calculatedResult)
+                setResult(finalResult)
+            }
+
+            if (parseFloat(finalResult) < 0) {
+                setResult("ERROR")
             }
         } catch (error) {
             setResult("ERROR")
@@ -48,7 +52,11 @@ function App() {
 
     return (
         <div className="wrapper">
-            <input className="display" value={result} onChange={handleChange} />
+            <input
+                className="display"
+                value={result === "ERROR" ? "ERROR" : result}
+                onChange={handleChange}
+            />
             <div className="buttonBox">
                 <button type="button" className="op" onClick={clear}>
                     AC
